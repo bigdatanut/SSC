@@ -6,7 +6,7 @@
   When you set the deployment client configuration during installation, it will be stored in SPLUNK_HOME/etc/system/local.
   As these configs take precedence over any config in SPLUNK_HOME/etc/apps/app_name/local, we are not able to change this setting via the Splunk deployment server. Therefore, you have to remove the system/local file before your config is taken into account. This script can be used as scripted input and deployed as an app via the Splunk deployment server to achieve this.
 
-  What does the script?:
+  What does the script do?:
   The script checks the install location of Splunk Enterprise or Splunk Universal Forwarder and checks whether a deploymentclient.conf is present in SPLUNK_HOME/etc/system/local.
 
   If the file exists, the deploymentclient.conf will be deleted, and the Splunk component will be restarted.
